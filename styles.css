@@ -7,6 +7,24 @@ body {
   font-family: sans-serif;
   cursor: none;
   background-color: #c33;
+  font-family: 'Crimson Pro', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', serif;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 54px;
+}
+h3 {
+  font-size: 42px;
 }
 
 .text-container {
@@ -15,10 +33,18 @@ body {
   background: white;
   min-height: 100vh;
   transition: opacity 0.5s linear;
+  padding: 50px 200px;
+  display: flex;
+  justify-content: center;
 }
 body.clicked .text-container {
   opacity: 1;
   visibility: visible;
+}
+.text {
+  width: 100%;
+  max-width: 800px;
+  font-size: 20px;
 }
 
 /* HEART BEAT EFFECT */
@@ -33,6 +59,17 @@ body.clicked .text-container {
   background-color: #c33;
   opacity: 1;
   transition: opacity 0.5s linear;
+}
+
+.heart-container.hidden,
+.heart-container.hidden * {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
 }
 
 body.clicked .heart-container {

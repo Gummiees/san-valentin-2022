@@ -1,8 +1,9 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(($) => {
   // CURSOR
   var cursor = $('.cursor'),
     follower = $('.cursor-follower'),
     heart = $('.heart'),
+    heartContainer = $('.heart-container'),
     body = $('body');
 
   var posX = 0,
@@ -13,7 +14,7 @@ jQuery(document).ready(function ($) {
 
   TweenMax.to({}, 0.016, {
     repeat: -1,
-    onRepeat: function () {
+    onRepeat: () => {
       posX += (mouseX - posX) / 9;
       posY += (mouseY - posY) / 9;
 
@@ -33,21 +34,24 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  $(document).on('mousemove', function (e) {
+  $(document).on('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
   });
   // yellow circle
-  heart.on('mouseenter', function () {
+  heart.on('mouseenter', () => {
     cursor.addClass('red');
     follower.addClass('red');
   });
-  heart.on('mouseleave', function () {
+  heart.on('mouseleave', () => {
     cursor.removeClass('red');
     follower.removeClass('red');
   });
   // yellow circle
-  heart.on('click', function () {
+  heart.on('click', () => {
     body.addClass('clicked');
+    setTimeout(() => {
+      heartContainer.addClass('hidden');
+    }, 1000);
   });
 });
