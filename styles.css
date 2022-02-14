@@ -22,7 +22,7 @@ h6 {
   font-family: 'DM Serif Display', serif;
 }
 h1 {
-  font-size: 115px;
+  font-size: 92px;
 }
 h2 {
   font-size: 54px;
@@ -32,6 +32,7 @@ h3 {
 }
 
 .text-container {
+  overflow: hidden;
   visibility: hidden;
   opacity: 0;
   background: white;
@@ -225,7 +226,27 @@ body.clicked .cursor-follower {
 }
 
 .breakfast-title {
-  background: url('./assets/desayuno01.jpg');
+  background: url('./assets/comida.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 550px auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.love-title {
+  background: url('./assets/selfie13.jpeg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 492px auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.moments-title {
+  background: url('./assets/selfie18.jpeg');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 550px auto;
@@ -235,16 +256,21 @@ body.clicked .cursor-follower {
 }
 
 .cats-title {
-  color: #e7008a;
+  background: url('./assets/michis/ray2.jpeg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 300px auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.michi-test {
-  clip-path: url(#clipping);
-  width: 300px;
+#clipping-comida2 path {
+  transform: scale(1.5) translate(80px, 72px);
 }
 
-#clipping path {
-  transform: scale(2) translate(71px, 141px);
+#clipping-comida3 path {
+  transform: scale(1.2) translate(131px, 111px);
 }
 
 .clip-svg {
@@ -252,4 +278,224 @@ body.clicked .cursor-follower {
   height: 0;
   position: absolute;
   z-index: -999;
+}
+
+.relative {
+  position: relative;
+}
+
+.michi-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.michi-container h2 {
+  display: flex;
+  align-items: center;
+}
+
+#comida2 {
+  clip-path: url(#clipping-comida2);
+  width: 300px;
+  top: -90px;
+  right: -300px;
+  position: absolute;
+}
+
+#comida3 {
+  clip-path: url(#clipping-comida3);
+  width: 343px;
+  top: -55px;
+  left: -300px;
+  position: absolute;
+}
+
+#selfie1 {
+  clip-path: url(#clip-selfie1);
+  width: 343px;
+  top: -55px;
+  left: -300px;
+  position: absolute;
+}
+#selfie2 {
+  clip-path: url(#clip-selfie2);
+  width: 343px;
+  top: 0px;
+  right: -300px;
+  position: absolute;
+}
+#selfie3 {
+  clip-path: url(#clip-selfie3);
+  width: 350px;
+  top: 200px;
+  right: -350px;
+  position: absolute;
+}
+#selfie4 {
+  clip-path: url(#clip-selfie4);
+  width: 205px;
+  top: 200px;
+  left: -240px;
+  position: absolute;
+}
+#selfie5 {
+  clip-path: url(#clip-selfie5);
+  width: 300px;
+  top: 450px;
+  left: -280px;
+  position: absolute;
+}
+#selfie6 {
+  clip-path: url(#clip-selfie6);
+  width: 300px;
+  top: 486px;
+  left: 39px;
+  position: absolute;
+}
+#selfie7 {
+  clip-path: url(#clip-selfie7);
+  width: 300px;
+  top: 406px;
+  right: -269px;
+  position: absolute;
+}
+#clip-selfie1 path {
+  transform: scale(1.2) translate(158px, 62px);
+}
+#clip-selfie2 path {
+  transform: scale(1.2) translate(158px, 62px);
+}
+#clip-selfie3 path {
+  transform: scale(1.75) translate(51px, 34px);
+}
+#clip-selfie4 path {
+  transform: scale(1.25) translate(81px, 63px);
+}
+#clip-selfie5 path {
+  transform: scale(1.5) translate(103px, 36px);
+}
+#clip-selfie6 path {
+  transform: scale(1.5) translate(92px, 65px);
+}
+#clip-selfie7 path {
+  transform: scale(3) translate(45px, 22px);
+}
+
+#clip-catri path {
+  transform: scale(2) translate(64px, 92px);
+}
+#clip-nina path {
+  transform: scale(2) translate(71px, 141px);
+}
+#clip-ray path {
+  transform: scale(2) translate(69px, 116px);
+}
+#clip-luis path {
+  transform: scale(2) translate(96px, 98px);
+}
+#clip-klaus path {
+  transform: scale(2) translate(76px, 125px);
+}
+#clip-cebolla path {
+  transform: scale(1.5) translate(158px, 103px);
+}
+#clip-leo path {
+  transform: scale(2.5) translate(90px, 60px);
+}
+#clip-batman path {
+  transform: scale(2) translate(57px, 111px);
+}
+
+#catri {
+  clip-path: url(#clip-catri);
+  width: 300px;
+  position: absolute;
+  right: -100px;
+}
+#nina {
+  clip-path: url(#clip-nina);
+  width: 300px;
+  position: absolute;
+  top: -220px;
+  left: -25px;
+}
+#ray {
+  clip-path: url(#clip-ray);
+  width: 300px;
+  position: absolute;
+  top: -205px;
+  right: -25px;
+}
+#luis {
+  clip-path: url(#clip-luis);
+  width: 450px;
+  position: absolute;
+  top: -158px;
+  left: -51px;
+}
+#klaus {
+  clip-path: url(#clip-klaus);
+  width: 300px;
+  position: absolute;
+  top: -250px;
+  right: -50px;
+}
+#cebolla {
+  clip-path: url(#clip-cebolla);
+  width: 500px;
+  position: absolute;
+  top: -112px;
+  left: -150px;
+}
+#leo {
+  clip-path: url(#clip-leo);
+  width: 500px;
+  position: absolute;
+  top: -103px;
+  right: -150px;
+}
+#batman {
+  clip-path: url(#clip-batman);
+  width: 250px;
+  position: absolute;
+  top: -184px;
+  left: -25px;
+}
+
+.catri {
+  color: #5acc72;
+}
+.nina {
+  margin-top: 100px;
+  color: #5ab1cc;
+}
+.ray {
+  margin-top: 100px;
+  color: #a25acc;
+}
+.luis {
+  margin-top: 100px;
+  color: #cc5a6d;
+}
+.klaus {
+  margin-top: 100px;
+  color: #969696;
+}
+.cebolla {
+  margin-top: 100px;
+  color: #c1cc5a;
+}
+.leo {
+  margin-top: 100px;
+  color: #cc7e5a;
+}
+.batman {
+  margin-top: 100px;
+  color: #3f3f3f;
+}
+
+.all-moments-container,
+.all-michis-container {
+  margin-top: 150px;
 }
