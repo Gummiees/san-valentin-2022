@@ -4,10 +4,14 @@
   padding: 0;
 }
 body {
+  overflow: hidden;
   font-family: sans-serif;
   cursor: none;
   background-color: #c33;
   font-family: 'Crimson Pro', serif;
+}
+body.clicked {
+  overflow-y: scroll;
 }
 h1,
 h2,
@@ -18,7 +22,7 @@ h6 {
   font-family: 'DM Serif Display', serif;
 }
 h1 {
-  font-size: 72px;
+  font-size: 115px;
 }
 h2 {
   font-size: 54px;
@@ -213,4 +217,39 @@ body.clicked .cursor:after {
 }
 body.clicked .cursor-follower {
   border: 1px solid black;
+}
+
+.mask {
+  -webkit-clip-path: url(#svgPath);
+  clip-path: url(#svgPath);
+}
+
+.breakfast-title {
+  background: url('./assets/desayuno01.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 550px auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.cats-title {
+  color: #e7008a;
+}
+
+.michi-test {
+  clip-path: url(#clipping);
+  width: 300px;
+}
+
+#clipping path {
+  transform: scale(2) translate(71px, 141px);
+}
+
+.clip-svg {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -999;
 }

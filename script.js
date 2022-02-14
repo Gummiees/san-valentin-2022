@@ -1,4 +1,7 @@
-jQuery(document).ready(($) => {
+$(document).ready(() => {
+  setTimeout(() => {
+    $(window).scrollTop(0);
+  }, 1);
   // CURSOR
   var cursor = $('.cursor'),
     follower = $('.cursor-follower'),
