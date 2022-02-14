@@ -328,35 +328,35 @@ body.clicked .cursor-follower {
 #selfie3 {
   clip-path: url(#clip-selfie3);
   width: 350px;
-  top: 200px;
+  top: 413px;
   right: -350px;
   position: absolute;
 }
 #selfie4 {
   clip-path: url(#clip-selfie4);
   width: 205px;
-  top: 200px;
+  top: 319px;
   left: -240px;
   position: absolute;
 }
 #selfie5 {
   clip-path: url(#clip-selfie5);
   width: 300px;
-  top: 450px;
-  left: -280px;
+  top: 480px;
+  left: 171px;
   position: absolute;
 }
 #selfie6 {
   clip-path: url(#clip-selfie6);
   width: 300px;
-  top: 486px;
-  left: 39px;
+  top: 130px;
+  left: -275px;
   position: absolute;
 }
 #selfie7 {
   clip-path: url(#clip-selfie7);
   width: 300px;
-  top: 406px;
+  top: 32px;
   right: -269px;
   position: absolute;
 }
